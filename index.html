@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NVL-JS-P9b</title>
+</head>
+<body>
+    <script>
+        var diasemana = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
+        var ciudades = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+
+        diasemana = diasemana.split(",");
+        ciudades = ciudades.split(".");
+        var conciertos = [];
+
+        var i = 0;
+        while (i < diasemana.length) {
+            conciertos[i] = diasemana[i]+":"+ciudades[i];
+            i++
+        }
+        document.write(conciertos);
+    </script>
+</body>
+</html>
+
+
