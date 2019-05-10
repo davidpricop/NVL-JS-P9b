@@ -12,12 +12,13 @@
         diasemana = diasemana.split(",");
         ciudades = ciudades.split(".");
         var conciertos = [];
-
+        
         var i = 0;
         while (i < diasemana.length) {
-            conciertos[i] = diasemana[i]+":"+ciudades[i];
+            conciertos.push([diasemana[i],ciudades[i]]);
             i++
         }
+
         document.write(conciertos);
     </script>
 </body>
